@@ -16,9 +16,12 @@ setInput('');
     <div className="App">
     
    <h1>Messenger</h1>
+   <form action="">
    <input value={input} onChange={event =>setInput(event.target.value)}/>
    
-   <button onClick={sendMessage}>Send Message</button> 
+   <button type='submit' onClick={sendMessage}>Send Message</button>
+   </form>
+  
    {
      messages.map(message =>(
        <p>{message}</p>
