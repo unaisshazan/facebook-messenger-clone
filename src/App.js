@@ -19,15 +19,10 @@ function App() {
       <form action="">
         <FormControl>
           <InputLabel >Enter a message...</InputLabel>
-          <Input/>
+          <Input  value={input}
+          onChange={(event) => setInput(event.target.value)}/>
        
-        </FormControl>
-        <input
-          value={input}
-          onChange={(event) => setInput(event.target.value)}
-        />
-
-        <Button
+       <Button
           type="submit"
           variant="contained"
           color="primary"
@@ -36,6 +31,9 @@ function App() {
         >
           Send Message
         </Button>
+        </FormControl>
+    
+
       </form>
 
       {messages.map((message) => (
