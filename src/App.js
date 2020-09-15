@@ -7,7 +7,7 @@ function App() {
     <div className="App">
     
    <h1>Messenger</h1>
-   <input value={input}/>
+   <input value={input} onChange={event =>setInput(event.target.value)}/>
    <button>Send Message</button> 
    
    </div>
