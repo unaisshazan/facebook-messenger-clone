@@ -20,7 +20,7 @@ setInput('');
    <h1>Messenger</h1>
    <form action="">
    <input value={input} onChange={event =>setInput(event.target.value)}/>
-   
+  
    <Button type='submit' onClick={sendMessage}>Send Message</Button>
    </form>
   
