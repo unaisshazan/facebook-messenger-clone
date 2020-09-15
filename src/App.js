@@ -4,7 +4,9 @@ import Button from "@material-ui/core/Button";
 import { FormControl ,InputLabel,Input} from '@material-ui/core';
 import Message from './Message'
 function App() {
-  const [input, setInput] = useState(["hello"]);
+  const [input, setInput] = useState([{username:'sonny',text:'hi'}
+  ,{username:'ali',text:'hell0'},
+  {username:'areej',text:'toni'}]);
   const [messages, setMessages] = useState([]);
   const [username,setUsername]=useState('');
 
