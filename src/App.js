@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import Button from "@material-ui/core/Button";
-import FormControl from "@material-ui/core/FormControl";
+import { FormControl ,InputLabel,Input} from '@material-ui/core';
 function App() {
   const [input, setInput] = useState(["hello"]);
   const [messages, setMessages] = useState([]);
@@ -18,11 +18,9 @@ function App() {
       <h1>Messenger</h1>
       <form action="">
         <FormControl>
-          <InputLabel htmlFor="my-input">Email address</InputLabel>
-          <Input id="my-input" aria-describedby="my-helper-text" />
-          <FormHelperText id="my-helper-text">
-            We'll never share your email.
-          </FormHelperText>
+          <InputLabel >Enter a message...</InputLabel>
+          <Input/>
+       
         </FormControl>
         <input
           value={input}
