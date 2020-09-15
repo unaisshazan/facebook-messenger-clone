@@ -20,7 +20,7 @@ setInput('');
    <form action="">
    <input value={input} onChange={event =>setInput(event.target.value)}/>
    
-   <button type='submit' onClick={sendMessage}>Send Message</button>
+   <Button type='submit' onClick={sendMessage}>Send Message</Button>
    </form>
   
    {
