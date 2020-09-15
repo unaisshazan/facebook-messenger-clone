@@ -4,8 +4,12 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+    
    <h1>Messenger</h1>
-    </div>
+   <input />
+   <button>Send Message</button> 
+   
+   </div>
   );
 }
 
