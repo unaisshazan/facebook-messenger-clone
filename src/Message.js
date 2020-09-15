@@ -4,7 +4,6 @@ import { Card,CardContent,Typography } from "@material-ui/core";
 function Message(props) {
     return (
         <div> 
-            <h2>{props.username}:{props.text}</h2>
         <Card>
             <CardContent>
                 <Typography
@@ -12,7 +11,7 @@ function Message(props) {
                 variant="h5"
                 component="h2"
                 >
-                    {props.text}
+                    {props.username}:{props.text}
                 </Typography>
             </CardContent>
         </Card>
