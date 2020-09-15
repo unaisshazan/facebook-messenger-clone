@@ -7,7 +7,7 @@ function App() {
     <div className="App">
     
    <h1>Messenger</h1>
-   <input />
+   <input value={input}/>
    <button>Send Message</button> 
    
    </div>
