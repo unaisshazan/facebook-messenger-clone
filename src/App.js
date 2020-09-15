@@ -21,7 +21,7 @@ setInput('');
    <form action="">
    <input value={input} onChange={event =>setInput(event.target.value)}/>
   
-   <Button type='submit' variant="contained" color="primary" onClick={sendMessage}>Send Message</Button>
+   <Button type='submit' variant="contained" color="primary"  disabled={!input} onClick={sendMessage}>Send Message</Button>
    </form>
   
    {
