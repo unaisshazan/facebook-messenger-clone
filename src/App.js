@@ -7,6 +7,7 @@ function App() {
   console.log(input)
   console.log(messages)
   const sendMessage =(event)=>{
+    event.preventDefault();
 
 setMessages([...messages , input])
 setInput('');
