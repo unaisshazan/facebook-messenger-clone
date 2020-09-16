@@ -5,7 +5,7 @@ function Message(message,username) {
     const isUser = username=== message.username;
     return (
   
-        <Card className="message">
+        <Card className={'message ${isUser && "message__user"}'}>
             <CardContent>
                 <Typography
                 color="white"
