@@ -4,7 +4,7 @@ import './Message.css';
 function Message(props) {
     return (
   
-        <Card className="message__card">
+        <Card className="message">
             <CardContent>
                 <Typography
                 color="white"
