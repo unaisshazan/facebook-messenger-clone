@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card,CardContent,Typography } from "@material-ui/core";
 import './Message.css';
-function Message(props) {
+function Message(message,username) {
     return (
   
         <Card className="message">
@@ -11,7 +11,7 @@ function Message(props) {
                 variant="h5"
                 component="h2"
                 >
-                    {props.username}:{props.text}
+                    {message.username}:{message.text}
                 </Typography>
             </CardContent>
         </Card>
