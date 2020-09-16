@@ -3,7 +3,7 @@ import { Card,CardContent,Typography } from "@material-ui/core";
 
 function Message(props) {
     return (
-
+  
         <Card>
             <CardContent>
                 <Typography
